@@ -9,7 +9,7 @@ function Footer() {
         <div className="contact-details">
           <p>Contact Details:</p>
           <p>
-            Phone: <a href="tel:9635386397">9635386397</a>
+            Phone: <a href="tel:9635670373">9635670373</a>
           </p>
           <p>
             WhatsApp: <a href="https://wa.me/9932917728" target="_blank" rel="noopener noreferrer">9932917728</a>
