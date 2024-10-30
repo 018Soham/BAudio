@@ -1,0 +1,66 @@
+/* src/pages/Home.css */
+
+.hero-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px auto; /* Centering the carousel */
+    width: 80%; /* Set a fixed width for the carousel */
+    max-width: 600px; /* Maximum width for larger screens */
+    height: 250px; /* Set a fixed height for the carousel */
+    overflow: hidden; /* Hide overflow */
+    border: 1px solid #ddd; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Round corners */
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for image changes */
+    height: 100%; /* Match the height of the carousel */
+  }
+  
+  .carousel-image {
+    min-width: 100%; /* Each image takes full width */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.5s ease; /* Smooth fade effect */
+    opacity: 0; /* Default to hidden */
+  }
+  
+  .carousel-image.active {
+    opacity: 1; /* Active image fully visible */
+  }
+  
+  button.prev, button.next {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for buttons */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+  }
+  
+  button.prev {
+    left: 10px; /* Position for previous button */
+  }
+  
+  button.next {
+    right: 10px; /* Position for next button */
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .carousel-image {
+      height: 150px; /* Set a smaller height for mobile */
+    }
+  }
+  

@@ -1,0 +1,74 @@
+/* src/components/Navbar.css */
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #532476; /* Main color */
+    padding: 10px 20px;
+    position: relative; /* Ensure proper positioning */
+    z-index: 1000; /* Ensure the navbar is above other content */
+  }
+  
+  .navBar h1 {
+    color: white;
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size */
+  }
+  
+  .nav-links {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display links in a row */
+  }
+  
+  .nav-links li {
+    margin: 0 15px; /* Space between links */
+  }
+  
+  .nav-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Adjust font size */
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column; /* Stack links vertically */
+      position: absolute; /* Allow overlap with other elements */
+      top: 60px; /* Position below the navbar */
+      left: 0; /* Align to the left */
+      right: 0; /* Stretch to the right */
+      background-color: #532476; /* Match the navbar background */
+      display: none; /* Hide by default */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show when active */
+    }
+  
+    .nav-links li {
+      margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+  
+    .toggle-button {
+      display: block; /* Show the button on mobile */
+      cursor: pointer; /* Pointer cursor on hover */
+      color: white; /* Button text color */
+    }
+  
+    .toggle-button span {
+      display: block; /* Stack lines vertically */
+      width: 25px; /* Line width */
+      height: 3px; /* Line height */
+      background: white; /* Line color */
+      margin: 4px; /* Space between lines */
+    }
+  }
+  

@@ -1,0 +1,56 @@
+/* src/pages/Services.css */
+
+.services-container {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #532476; /* Change this color as needed */
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    padding: 15px;
+    max-width: 300px; /* Adjust the width as needed */
+    transition: transform 0.2s;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05); /* Add a slight zoom effect on hover */
+  }
+  
+  .service-image {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  .phone-icon {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  a {
+    color: #532476; /* Change this color as needed */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
