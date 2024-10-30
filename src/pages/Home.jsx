@@ -1,15 +1,12 @@
-// src/pages/Home.jsx
-
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home.css';
 
-const images = [
-  require('../assets/images/image1.jpg'),
-  require('../assets/images/image2.jpg'),
-  require('../assets/images/image3.jpg'),
-  // Add more image URLs as needed
-];
+import image1 from '../assets/images/image1.jpeg';
+import image2 from '../assets/images/image1.jpeg';
+import image3 from '../assets/images/image1.jpeg';
+
+const images = [image1, image2, image3];
 
 function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
