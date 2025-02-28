@@ -1,0 +1,88 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Contact Container Styles */
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Padding around the container */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Set a fixed width for the form */
+  }
+  
+  label {
+    margin-bottom: 10px; /* Space between labels */
+  }
+  
+  input {
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 10px;
+    background-color: #532476; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+  }
+  
+  button:hover {
+    background-color: #450e6e; /* Darker button color on hover */
+  }
+  
+  /* Popup Styles */
+  .popup {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  .popup-content {
+    background-color: white; /* Popup background color */
+    padding: 20px; /* Padding inside the popup */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+  }
+  
+  /* Contact Info Styles */
+  .contact-info {
+    display: flex; /* Flex layout for icons */
+    flex-direction: column; /* Stack icons vertically */
+    margin-top: 20px; /* Space above the icons */
+  }
+  
+  .contact-icon {
+    display: flex; /* Flex for icon and text alignment */
+    align-items: center; /* Center vertically */
+    text-decoration: none; /* Remove underline */
+    color: #532476; /* Icon color */
+    margin: 5px 0; /* Space between icons */
+    font-size: 18px; /* Font size */
+  }
+  
+  .contact-icon i {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  

@@ -1,0 +1,80 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  height: 350px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Ensure smooth sliding */
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button.prev, button.next {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .carousel {
+    height: 150px;
+  }
+}
+.crystal-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.book-now {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.book-now:hover {
+  background-color: #e65c00;
+}
+
+/* Ensure the button is centered */
+.hero-section {
+  text-align: center;
+}

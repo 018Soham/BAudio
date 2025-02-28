@@ -1,0 +1,35 @@
+.footer {
+    background-color: #532476; /* Background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center align text */
+  }
+  
+  .footer-content {
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center align the footer content */
+  }
+  
+  .contact-details p {
+    margin: 5px 0; /* Add margin between contact details */
+  }
+  
+  .contact-details a {
+    color: #ffcc00; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .contact-details a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .google-map {
+    margin-top: 20px; /* Space above the map */
+  }
+  
+  .google-map iframe {
+    width: 60%; /* Make the map responsive */
+    height: 100px; /* Set height for the map */
+    border: 0; /* Remove border */
+  }
+  
